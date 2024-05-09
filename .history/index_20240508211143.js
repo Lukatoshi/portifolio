@@ -40,3 +40,29 @@ $(function(){
     $('.navbar a').smoothScroll();
   
   })
+
+  ////////////////////////////////////////////INSTAGRAM//////////////////////////////////////
+  function openInstagramProfile() {
+    window.open("https://www.instagram.com/lucaslukatoshi/", "_blank");
+  }
+
+  function  openLinkedinProfile() {
+    window.open("https://www.linkedin.com/in/lucas-go-lourenco-441373289", "_blank");
+  }
+ 
+  function  openGithubProfile() {
+    window.open("https://www.linkedin.com/in/lucas-go-lourenco-441373289", "_blank");
+  }
+ 
+  //////////////////////////////////////////////modal////////////////////////////////////////
+
+
+
+  function openModal() {
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  // Função para fechar o modal
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }

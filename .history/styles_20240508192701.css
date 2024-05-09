@@ -258,9 +258,12 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  background-color: #48A09B;
+  background-color: transparent;
 }
 
+.borda-colorida{
+  border-radius: 50%;
+}
 section {
   background-size: cover;
   background-repeat: no-repeat;

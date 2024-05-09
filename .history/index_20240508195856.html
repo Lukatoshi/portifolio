@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <title>JavaScript teste</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,39 +63,13 @@
   <main class="main">
     <div class="all-content">
       <div class="boas-vindas">
-          <div class="borda-colorida" onclick="openInstagramProfile()">
+        <div class="container">
+          <div class="borda-colorida">
             <div class="conteudo-stories">
-              <img
-                src="https://i0.wp.com/doutorespalhacos.com.br/wp-content/uploads/2020/03/logo-instagram-png-fundo-transparente.png"
-                alt="">
-               
-            </div>
-          <div> <p class="text-light"> Instagram</p></div>
-          </div>
-
-          <div class="borda-colorida" onclick="openLinkedinProfile()">
-            <div class="conteudo-stories">
-              <img
-                src="data:image/png;base64,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"
-                alt="">
+              <a href="">
+              <img src="https://i0.wp.com/doutorespalhacos.com.br/wp-content/uploads/2020/03/logo-instagram-png-fundo-transparente.png" alt="">
             </div>
           </div>
-          <div class="borda-colorida" onclick="openGithubProfile()">
-            <div class="conteudo-stories">
-              <img
-                src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
-                alt="">
-            </div>
-          </div>
-
-          <div id="myModal" class="modal">
-            <!-- Conteúdo do modal -->
-            <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <iframe src="https://www.example.com" style="width: 100%; height: 80vh; border: none;"></iframe>
-          </div>
-
-
         </div>
       </div>
       <!-- home section -->
@@ -205,7 +179,7 @@
       </section>
     </div>
   </main>
-  <script src="assets/js/index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,449 @@
+* {
+  box-sizing: border-box;
+}
+
+.sofia-regular {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: white;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 220px;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+  border-right: 1px solid gray;
+  transition: all 0.35s;
+}
+
+.sidebar-header {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.logo-img {
+  width: 35px;
+  min-height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s;
+  margin-left: 10px;
+}
+
+.logo-img {
+  margin: 0;
+  position: relative;
+  font-size: 28px;
+  transition: 0.2s;
+
+}
+
+.sidebar button {
+  height: 60px;
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+
+}
+
+.sidebar button>span {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding: 0 16px 0 12px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.sidebar button:hover>span {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar button i {
+  position: relative;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.sidebar button span {
+  font-size: 16px;
+}
+
+.sidebar>nav {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main {
+  /* margin-left: 250px; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-right: 6px;
+  overflow: hidden;
+}
+
+@media (width < 920px) {
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar>span {
+    width: 50px;
+  }
+
+  .sidebar button>span>span {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .main {
+
+    transition: margin 0.4s;
+    margin-left: 82px;
+
+  }
+
+  .sidebar button>span {
+    width: 52px;
+  }
+}
+
+/* Celular Screen*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+
+  .sidebar {
+    position: fixed;
+    height: auto;
+    bottom: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    margin-top: 900px;
+    transition: all 0.35s;
+  }
+
+  .sidebar-header {
+    display: none;
+  }
+
+  .logo-img {
+    width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+  }
+
+  .logo-img {
+    margin: 0;
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+
+  }
+
+  .sidebar button {
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: #fff;
+    cursor: pointer;
+    overflow-x: hidden;
+    padding: 0;
+
+  }
+
+  .sidebar button>span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    padding: 0 16px 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+  }
+
+  .sidebar button:hover>span {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .sidebar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+  }
+
+  .sidebar button span {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar button span span {
+    display: none;
+  }
+
+  .sidebar>nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+  }
+
+  .main {
+    margin: 10px;
+    height: fit-content;
+    padding-bottom: 100px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+}
+
+.main .all-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 630px;
+  width: 100%;
+
+}
+
+.boas-vindas {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  background-color: transparent;
+}
+
+.borda-colorida{
+  width: 100px;
+  border-radius: 50%;
+}
+.conteudo-stories{
+  max-width: 90%;
+}
+.conteudo-stories img{
+  width: 32px;
+  height: 32px;
+}
+section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.vcenter {
+  height: 100%;
+}
+
+.vcenter .row {
+  height: 100%;
+  display: table;
+}
+
+.vcenter .row div[class^="col-"] {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.portfolio {
+  background-color: #9DE0AD;
+  background-image: url('https://jpk-image-hosting.s3.amazonaws.com/chalk.jpg');
+}
+
+.portfolio h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio .project {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.portfolio .project .overlay {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(8, 8, 8, 0.7);
+  overflow: hidden;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.3;
+}
+
+.portfolio .project .overlay h4 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Cantarell", sans-serif;
+  font-size: 24px;
+  color: #CDD7B6;
+  opacity: 0.8;
+}
+
+.portfolio .project:hover .overlay,
+.portfolio .project:focus .overlay,
+.portfolio .project:active .overlay {
+  opacity: 0.6;
+}
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.home-intro h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 60px;
+  color: #E33258;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.home-intro h2 {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #363B3A;
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 13px;
+  border-top: 3px solid #363B3A;
+  display: inline-block;
+}
+
+.home-intro ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.home-intro ul li {
+  display: inline;
+}
+
+.home-intro ul li a {
+  color: #48A09B;
+  transition: color 0.3s linear;
+}
+
+.home-intro ul li a:hover,
+.home-intro ul li a:focus,
+.home-intro ul li a:active {
+  color: #E33258;
+}
+
+.about {
+  background-color: #A4B5BF;
+  background-image: url('https://jpk-image-hosting.s3.amazonaws.com/computer-desk.jpg');
+  color: #FEFDEB;
+  font-family: "Cantarell", sans-serif;
+}
+
+.about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.about blockquote {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+}
+
+.contact {
+  background-color: #594F4F;
+}
+
+.contact h2 {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #CDD7B6;
+  text-transform: uppercase;
+}
+
+.contact h3 a {
+  font-family: "Cantarell", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #48A09B;
+  transition: color 0.3s linear;
+}
+
+.contact h3 a:hover,
+.contact h3 a:focus,
+.contact h3 a:active {
+  color: #E33258;
+}
